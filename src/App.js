@@ -15,17 +15,16 @@ class App extends Component {
                 if (numbers.indexOf(randomNumber) === -1) {
                     numbers.push(randomNumber);
                     break;
-                }
-                continue;
+                } else continue;
             }
         }
         return numbers.sort(function(a, b){return a-b});
   };
 
 
-    changeNumbers = () => {
-      const newNumbers = this.getRandomNumbers();
-      this.setState({numbers: newNumbers});
+  changeNumbers = () => {
+    const newNumbers = this.getRandomNumbers();
+    this.setState({numbers: newNumbers});
   };
 
   render() {
