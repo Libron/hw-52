@@ -3,7 +3,6 @@ import './Loto.css';
 
 class Loto extends Component {
     render() {
-        console.log(this.props);
         return (
             <div className="lotoreya">
                 <ul>
